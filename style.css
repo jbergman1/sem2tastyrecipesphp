@@ -1,0 +1,270 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #282828;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar li a:hover {
+	background-color: #111;
+}
+
+body {
+	font-size: 101%;
+	font-family: "Courier New", Lucida Console, Monospace;
+	background-color: #ddd;	
+	color: #800000
+}
+
+table {
+	width: 100%
+}
+
+h3 {
+	font-size: 170%;
+	color: #CD853F
+}
+
+h4 {
+	font-size: 135%;
+	color: #CD853F
+}
+
+.image {
+	width: 600px;
+	height: 350px;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.thumbnail {
+	width: auto;
+	height: auto;
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.container {
+	border: 2px solid #dedede;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0;
+	color: #000000;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.user-right {
+	float: right;
+	color: #999;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+textarea {
+	width: 400px;
+	height: 80px;
+	background-color: #fff;
+	resize: none;
+}
+
+.log {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.logbutton {
+	width: 90px;
+	height: 30px;
+	background-color: #282828;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	float: right;	
+	margin-bottom: 0px;
+}
+
+
+button {
+	width: 90px;
+	height: 30px;
+	background-color: #282828;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 60px;
+}
+
+.comment-box {
+	width: 815px;
+	padding: 20px;
+	margin-bottom: 4px;
+	background-color: #fff;
+	border-radius: 4px;
+	position: relative;
+}
+
+.comment-box p {
+	font-family: arial;
+	font-size: 14px;
+	line-height: 16px;
+	color: #282828
+	font-weight: 100;
+}
+
+
+.delete-form {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.delete-form button {
+	width: 40p;
+	height: 20px;
+	color: #282828;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.delete-form button:hover {
+	opacity: 1;
+}
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #ddd;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: #282828;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#282828;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: white;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #282828;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    height: 100px;
+    text-align: center;
+    font-size:12px;
+    color: white;
+}
+
+/* Highlight the "current" day */
+.days li:hover {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
