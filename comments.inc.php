@@ -1,16 +1,5 @@
 <?php
-/*
-function setComments($conn) {
-	if (isset($_POST['commentSubmit'])){
-		$uid = $_POST['uid'];
-		$date = $_POST['date'];
-		$message = $_POST['message'];
-		
-		$sql = "INSERT INTO comments (uid, date, message) VALUES ('$uid', '$date', '$message')";
-		$result = $conn->query($sql);
-	}
-}
-*/
+
 function getComments($conn) {
 	$sql = "SELECT * FROM comments";
 	$result = $conn->query($sql);
@@ -36,44 +25,3 @@ function getComments($conn) {
 		}
 	}
 }
-/*
-function deleteComments($conn) {
-	if (isset($_POST['commentDelete'])) {
-		$cid = $_POST['cid'];
-		
-		$sql = "DELETE FROM comments WHERE cid='$cid'";
-		$result = $conn->query($sql);
-		header("Location: meatballs.php");
-	}
-}
-
-function getLogin($conn) {
-	if (isset($_POST['loginSubmit'])){
-		$uid = $_POST['uid'];
-		$pwd = $_POST['pwd'];
-		
-		$sql = "SELECT * FROM user WHERE uid='$uid' AND pwd='$pwd'";
-		$result = $conn->query($sql);
-		if (mysqli_num_rows($result) == 1) {
-			if ($row = $result->fetch_assoc()){
-				$_SESSION['id'] = $row['id'];
-				header("Location: index.php?loginsuccess");
-				exit();
-			}
-		} else {
-			header("Location: index.php?loginfailed");
-			exit();
-		}
-	
-	}
-}
-
-function userLogout() {
-	if (isset($_POST['logoutSubmit'])){
-		session_start();
-		session_destroy();
-		header("Location: index.php");
-		exit();
-	}
-}
-*/
